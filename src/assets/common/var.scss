@@ -1,0 +1,173 @@
+/*main
+----------------------*/
+$--main-padding: 0 20px;
+/*aside
+----------------------*/
+$--aside-padding: 0 20px;
+/*header
+----------------------*/
+$--header-padding: 0 20px;
+/*footer
+----------------------*/
+$--footer-padding: 0 20px;
+/*颜色变量 color
+----------------------*/
+$--color-primary: #409FFF!default;
+$--color-white: #FFFFFF !default;
+$--color-black: #000000 !default;
+$--color-primary-light-1: mix($--color-white,$--color-primary,10%)!default;
+$--color-primary-light-2: mix($--color-white,$--color-primary,20%)!default;
+$--color-primary-light-3: mix($--color-white,$--color-primary,30%)!default;
+$--color-primary-light-4: mix($--color-white,$--color-primary,40%)!default;
+$--color-primary-light-5: mix($--color-white,$--color-primary,50%)!default;
+$--color-primary-light-6: mix($--color-white,$--color-primary,60%)!default;
+$--color-primary-light-7: mix($--color-white,$--color-primary,70%)!default;
+$--color-primary-light-8: mix($--color-white,$--color-primary,80%)!default;
+$--color-primary-light-9: mix($--color-white,$--color-primary,90%)!default;
+/*颜色变量 color(辅助色)
+----------------------*/
+$--color-success: #67c23a !default;
+$--color-success-light: mix($--color-white,$--color-success,20%) !default;
+$--color-success-lighter: mix($--color-white,$--color-success,90%) !default;
+
+$--color-warning: #E6A23C !default;
+$--color-warning-light: mix($--color-white,$--color-warning,20%) !default;
+$--color-warning-lighter: mix($--color-white,$--color-warning,90%) !default;
+
+$--color-danger: #F56C6C !default;
+$--color-danger-light: mix($--color-white,$--color-danger,20%) !default;
+$--color-danger-lighter: mix($--color-white,$--color-danger,90%) !default;
+
+$--color-info: #909399 !default;
+$--color-info-light: mix($--color-white,$--color-info,20%) !default;
+$--color-info-lighter: mix($--color-white,$--color-info,90%) !default;
+/*颜色变量 color(中性色)
+----------------------*/
+$--color-text-primary: #303133 !default; //主要文字
+$--color-text-regular: #606266 !default; //常规文字
+$--color-text-secondary: #909399 !default; //次要文字
+$--color-text-placeholder: #c0c4cc !default; //占位文字
+$--border-color-base: #dcdfe6 !default; //一级边框
+$--border-color-light: #e4e7eD !default; //二级边框
+$--border-color-lighter: #ebeef5 !default; //三级边框
+$--border-color-extra-light: #f2f6fc !default; //四级边框
+/*字体 Typography
+----------------------*/
+$--font-size-extra-large: 20px !default; //主标题
+$--font-size-large: 18px !default; //标题
+$--font-size-medium: 16px !default; //小标题
+$--font-size-base: 14px !default; //正文
+$--font-size-small: 13px !default; //正文（小）
+$--font-size-extra-small: 12px !default; //正文（小）
+$--font-weight-primary: 400 !default; 
+/*border
+----------------------*/
+$--border-width-base: 1px !default;
+$--border-style-base: solid !default;
+$--border-base: 1px solid $--border-color-base !default;
+$--border-radius-base: 4px !default; //大圆角
+$--border-radius-small: 2px !default; //大圆角
+$--border-radius-zero: 0 !default; //大圆角
+$--box-shadow-base: 0 2px 4px rgba(0,0,0,.12),0 0 6px rgba(0,0,0,.04) !default;
+$--box-shadow-light: 0 2px 12px rgba(0,0,0,0.1) !default;
+/* 断点变量
+----------------------*/
+$--xs : 767px !default;
+$--sm : 768px !default;
+$--md-1 : 991px !default;
+$--md : 992px !default;
+$--lg-1: 1199px !default;
+$--lg : 1200px !default;
+$--xl-1: 1919px !default;
+$--xl : 1920px !default;
+/* button 变量
+----------------------*/
+$--button-padding-vertical: 12px !default;
+$--button-padding-horizontal: 20px !default;
+$--button-font-size: $--font-size-base !default;
+$--button-font-weight: $--font-weight-primary !default;
+$--button-border-radius: $--border-radius-base !default;
+
+$--button-medium-padding-vertical: 10px;
+$--button-medium-padding-horizontal: 20px;
+$--button-medium-font-size: $--font-size-base;
+$--button-medium-border-radius: $--border-radius-base;
+
+$--button-small-padding-vertical: 9px;
+$--button-small-padding-horizontal: 15px;
+$--button-small-font-size: $--font-size-extra-small;
+$--button-small-border-radius: #{$--border-radius-base - 1};
+
+$--button-mini-padding-vertical: 7px;
+$--button-mini-padding-horizontal: 15px;
+$--button-mini-font-size: $--font-size-extra-small;
+$--button-mini-border-radius: #{$--border-radius-base - 1};
+
+$--button-default-background-color: $--color-white !default; // #fff
+$--button-default-border-color: $--border-color-base !default; // #dcdfe6
+$--button-default-font-color: $--color-text-regular !default; // #606266
+
+$--button-primary-background-color: $--color-primary !default; // #4093ff
+$--button-primary-border-color: $--color-primary !default; // #4093ff
+$--button-primary-font-color: $--color-white !default; // #fff 
+
+$--button-success-background-color: $--color-success !default; // #67c23a
+$--button-success-border-color: $--color-success !default; // #67c23a
+$--button-success-font-color: $--color-white !default; // #fff
+
+
+$--button-info-background-color: $--color-info !default; //  #909399
+$--button-info-border-color: $--color-info !default; //  #909399
+$--button-info-font-color: $--color-white !default; // #fff
+
+$--button-warning-background-color: $--color-warning !default; // e6a23c
+$--button-warning-border-color: $--color-warning !default; // e6a23c
+$--button-warning-font-color: $--color-white !default; // #fff
+
+$--button-danger-background-color: $--color-danger !default; // #f56c6c
+$--button-danger-border-color: $--color-danger !default; // #f56c6c
+$--button-danger-font-color: $--color-white !default; // #fff
+
+$--button-disabled-background-color: $--color-white !default;
+$--button-disabled-border-color: $--border-color-lighter !default; //ebeef5
+$--button-disabled-font-color: $--color-text-placeholder !default; //c0c4cc
+
+$--button-active-shade-percent: 10% !default;
+$--button-hover-tint-percent: 20% !default;
+
+/* link 变量
+----------------------*/
+$--link-font-size: $--font-size-base !default; // 14px
+$--link-font-weight: $--font-weight-primary !default; // 500
+$--link-default-font-color: $--color-text-regular !default; // 606266
+$--link-active-font-color: $--color-primary !default; // 409eff
+$--link-primary-font-color: $--color-primary !default; // 409eff
+$--link-success-font-color: $--color-success !default; 
+$--link-warning-font-color: $--color-warning !default; 
+$--link-danger-font-color: $--color-danger !default; 
+$--link-info-font-color: $--color-info !default; 
+
+/*map数据
+----------------------*/
+$--breakpoints: (
+    xs : (max-width: $--xs),
+    sm : (min-width: $--sm),
+    md : (min-width: $--md),
+    lg : (min-width: $--lg),
+    xl : (min-width: $--xl),
+);
+/*断点map数据
+----------------------*/
+$--breakpoints-spec: (
+    'xs-only' : (max-width: $--xs),
+    'sm-and-up' : (min-width: $--sm),
+    'sm-only' : '(min-width: #{$--sm}) and (max-width: #{$--md-1} )',
+    'sm-and-down' : (max-width: $--md-1),
+    'md-and-up' : (min-width: $--md),
+    'md-only' : '(min-width: #{$--md}) and (max-width: #{$--lg-1} )',
+    'md-and-down' : (max-width: $--lg-1),
+    'lg-and-up' : (min-width: $--lg),
+    'lg-only' : '(min-width: #{$--lg}) and (max-width: #{$--xl-1} )',
+    'lg-and-down' : (max-width: $--xl-1),
+    'xl-only' : (min-width: $--xl),
+);
